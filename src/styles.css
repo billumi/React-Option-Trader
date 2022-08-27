@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+span {
+  padding: 10px;
+}
+button {
+  display: inline;
+  margin: 10px;
+}
+.recommendation-container {
+  display: flex;
+  border: 1px solid #ccc;
+  margin-top: 15px;
+  padding: 5px 15px;
+}
+
+.recommendation-list {
+  display: flex;
+  flex: 40;
+}
+
+.recommendation-detail {
+  display: flex;
+  flex: 60;
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+}
+
+.chart-container {
+  display: flex;
+  flex: 60;
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+}
