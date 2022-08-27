@@ -8,18 +8,18 @@ import "./styles.css";
 const recommendations = [
   { id: 1, symbol: "BANKBARODA", price: 29, rank: 1 },
   { id: 2, symbol: "EICHERMOT", price: 30, rank: 2 },
-  { id: 3, symbol: "NTPC", price: 31, rank: 3 }
+  { id: 3, symbol: "NTPC", price: 31, rank: 3 },
 ];
 
 class App extends React.Component {
   state = {
-    id: 0
+    id: 0,
   };
 
   setRecommendation = (newId) => {
     console.log(newId);
     this.setState({
-      id: newId
+      id: newId,
     });
   };
 
@@ -35,14 +35,18 @@ class App extends React.Component {
         <div className="recommendation-detail">
           {this.state.id ? (
             <Recommendation
-              person={recommendations.find((each) => each.id == this.state.id)}
+              recommendation={recommendations.find(
+                (each) => each.id == this.state.id
+              )}
             />
           ) : null}
         </div>
         <div className="chart-container">
           {this.state.id ? (
             <Chart
-              person={recommendations.find((each) => each.id == this.state.id)}
+              recommendation={recommendations.find(
+                (each) => each.id == this.state.id
+              )}
             />
           ) : (
             "Chart goes here"
