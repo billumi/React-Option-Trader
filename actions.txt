@@ -1,0 +1,4 @@
+1. Hookup the bottom chart to show the latest values for the best 10 stocks of the day
+2. Remove the listing of the stocks on the left top widget and make that as an action panel. Move to the right
+3. Show the details of the selected stock on the right wigdet with the price and volume on per 5 minutes data 
+4. On the actoon panel provide a functionality to buy / sell upon the click of a button 

@@ -2,15 +2,15 @@ import React from "react";
 
 function Recommendations(props) {
   function handleClick(e) {
-    console.log(e.target.value);
     props.recommendation({ id: e.target.value });
   }
 
   let list = props.list;
+  console.log(list);
   return (
     <div>
       <div>Recommendations</div>
-      {}
+
       <div>
         {list.map((each) => (
           <span>
